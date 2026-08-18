@@ -124,6 +124,13 @@ public class EntriesAndTheirContentsServiceTests
 
     #endregion
 
+    private void SetupSuccessfulLogFileCreation(string logFilePath)
+    {
+        _mockFileUtilityService
+            .Setup(x => x.CreateOrClearFile(logFilePath))
+            .Returns(true);
+    }
+
     #region LogEntriesOfDirectoryAndTheirContentsToFile (IndentedTextWriter) Tests
 
     [Fact]
@@ -139,10 +146,8 @@ public class EntriesAndTheirContentsServiceTests
         // 建立測試專案檔案
         _mockFileSystem.AddFile(_mockFileSystem.Path.Combine(srcDir, "Class1.cs"), new MockFileData("public class Class1 {}"));
 
-        _mockFileUtilityService
-             .Setup(s => s.CreateOrClearFile(It.IsAny<string>()))
-             .Callback<string>(path => { /* 這裡可以留空，僅供 Mock 攔截 */ });
-            
+        SetupSuccessfulLogFileCreation(logFilePath);
+
         _mockDirectoryUtilityService.Setup(s => s.IsDirectory(It.IsAny<string>())).Returns(false);
     
         // Act
@@ -173,6 +178,7 @@ public class EntriesAndTheirContentsServiceTests
         _mockFileSystem.AddFile(binDir, new MockFileData(new byte[0]) { AllowedFileShare = FileShare.ReadWrite }); // 模擬目錄/檔案
         _mockFileSystem.AddFile(sourceFile, new MockFileData("<h1>Hello</h1>"));
 
+        SetupSuccessfulLogFileCreation(logFilePath);
         _mockFileUtilityService.Setup(s => s.CreateOrClearFile(logFilePath)).Verifiable();
         
         // 設定過濾條件模擬
@@ -207,8 +213,7 @@ public class EntriesAndTheirContentsServiceTests
         _mockFileUtilityService.Setup(s => s.CreateOrClearFile(logFilePath)).Verifiable();
         _mockDirectoryUtilityService.Setup(s => s.IsDirectory(It.IsAny<string>())).Returns(false);
 
-        _mockFileUtilityService.Setup(s => s.CreateOrClearFile(logFilePath))
-            .Callback<string>(path => { });
+        SetupSuccessfulLogFileCreation(logFilePath);
         // Act
         Action act = () => _sut.LogEntriesOfDirectoryAndTheirContentsToFile(srcDir, "*.*", logFilePath, LogEntriesOptions.All);
 
