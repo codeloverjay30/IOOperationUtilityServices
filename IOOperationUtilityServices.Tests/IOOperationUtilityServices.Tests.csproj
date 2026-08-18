@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+      <!-- 透過C#語言的inline task來在編譯時期檢查該專案所使用的MSBuild版本和.NET SDK版本，若版本過舊則丟出編譯錯誤 -->
+      <MinMSBuildReq>19.0</MinMSBuildReq>
+      <MinNetSdkReq>10.0</MinNetSdkReq>
+      <TargetFramework>net10.0</TargetFramework>
+      <Nullable>enable</Nullable>
+      <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+     <PackageReference Include="coverlet.collector" />
+     <PackageReference Include="FluentAssertions" />
+     <PackageReference Include="Microsoft.NET.Test.Sdk" />
+     <PackageReference Include="xunit" />
+     <PackageReference Include="xunit.runner.visualstudio" />
+     <PackageReference Include="System.IO.Abstractions" />
+     <PackageReference Include="System.IO.Abstractions.TestingHelpers" />
+     <PackageReference Include="Moq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IOOperationUtilityServices\IOOperationUtilityServices.csproj" />
+  </ItemGroup>
+</Project>
