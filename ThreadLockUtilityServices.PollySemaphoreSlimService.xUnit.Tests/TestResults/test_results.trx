@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f5c39611-c964-4907-8e27-977f96a7a31a" name="userJay30@ASUS-B1400CBNGW 2026-04-22 18:10:04" runUser="ASUS-B1400CBNGW\userJay30" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-22T18:10:04.0953810+08:00" queuing="2026-04-22T18:10:04.0953814+08:00" start="2026-04-22T18:10:01.7454387+08:00" finish="2026-04-22T18:10:13.4312565+08:00" />
+  <TestSettings name="default" id="931a00d6-32b7-4e78-9056-643b584a4df5">
+    <Deployment runDeploymentRoot="userJay30_ASUS-B1400CBNGW_2026-04-22_18_10_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="46e11b1f-483b-47d7-ab22-b2b167d487d9" testId="706389fa-b088-4028-534e-b3a85315199c" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock" computerName="ASUS-B1400CBNGW" duration="00:00:00.2043710" startTime="2026-04-22T18:10:02.8679920+08:00" endTime="2026-04-22T18:10:03.0929311+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46e11b1f-483b-47d7-ab22-b2b167d487d9">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Threading.SemaphoreFullException : Adding the specified count to the semaphore would cause it to exceed its maximum count.</Message>
+          <StackTrace>   at System.Threading.SemaphoreSlim.Release(Int32 releaseCount)&#xD;
+   at ThreadLevelLockingUtilityServices.SemaphoreSlimManager.TryToRelease() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\SemaphoreSlimManager.cs:line 31&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.Releaser.TryToRelease() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 899&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.Releaser.Dispose() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 919&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 148&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock()&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ef29dd88-8eda-4f5e-b841-85080804945c" testId="d465f9cd-dedd-d4b7-8c68-26e4b4c7550a" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable" computerName="ASUS-B1400CBNGW" duration="00:00:10.0438393" startTime="2026-04-22T18:10:03.2783754+08:00" endTime="2026-04-22T18:10:13.3229355+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef29dd88-8eda-4f5e-b841-85080804945c">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected statusJsonModel2 not to be &lt;null&gt;.</Message>
+          <StackTrace>   at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 179&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="233c1202-3400-4478-a9c7-7a6924eaf083" testId="f8fbf6cb-06a1-f8a6-0b96-234cc803b015" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.GetCurrentActiveCount_ShouldReflectSemaphoreState" computerName="ASUS-B1400CBNGW" duration="00:00:00.0324626" startTime="2026-04-22T18:10:02.8652639+08:00" endTime="2026-04-22T18:10:02.9077524+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="233c1202-3400-4478-a9c7-7a6924eaf083" />
+    <UnitTestResult executionId="a5bc6ca3-50cc-4cd7-be94-dc62c440fee5" testId="ae80f147-e074-1188-5657-a3c9ae3601e8" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.GetHealthMetrics_ShouldReturnCorrectCurrentState" computerName="ASUS-B1400CBNGW" duration="00:00:00.0033682" startTime="2026-04-22T18:10:03.2741203+08:00" endTime="2026-04-22T18:10:03.2777670+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5bc6ca3-50cc-4cd7-be94-dc62c440fee5">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.GetHealthMetrics() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 747&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.GetHealthMetrics_ShouldReturnCorrectCurrentState() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 206&#xD;
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e8948ba3-16f0-4c2c-800b-0f9b1f779eb6" testId="4778fcf1-ff93-46ce-b86c-9fcb9f2250e7" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled" computerName="ASUS-B1400CBNGW" duration="00:00:00.0305382" startTime="2026-04-22T18:10:13.3279323+08:00" endTime="2026-04-22T18:10:13.3536948+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8948ba3-16f0-4c2c-800b-0f9b1f779eb6">
+      <Output>
+        <ErrorInfo>
+          <Message>Did not expect System.OperationCanceledException, but found System.OperationCanceledException: The operation was canceled.&#xD;
+   at Polly.Utils.ExceptionUtilities.TrySetStackTrace[T](T exception)&#xD;
+   at Polly.Utils.Pipeline.CompositeComponent.ExecuteCoreWithoutTelemetry[TResult,TState](Func`3 callback, ResilienceContext context, TState state)&#xD;
+   at Polly.Utils.Pipeline.CompositeComponent.ExecuteCore[TResult,TState](Func`3 callback, ResilienceContext context, TState state)&#xD;
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+   at Polly.ResiliencePipeline`1.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 530&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency)&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 508&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0&gt;d.MoveNext() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 193&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0()&#xD;
+   at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 196&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled()&#xD;
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)&#xD;
+   at Xunit.Sdk.TestInvoker`1.CallTestMethod(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 149&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;&lt;InvokeTestMethodAsync&gt;b__1&gt;d.MoveNext() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 256&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;InvokeTestMethodAsync&gt;b__1()&#xD;
+   at Xunit.Sdk.ExecutionTimer.AggregateAsync(Func`1 asyncAction) in /_/src/xunit.execution/Sdk/Frameworks/ExecutionTimer.cs:line 48&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.ExecutionTimer.AggregateAsync(Func`1 asyncAction)&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;InvokeTestMethodAsync&gt;b__0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 215&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync(Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 90&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync(Func`1 code)&#xD;
+   at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 214&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance)&#xD;
+   at Xunit.Sdk.XunitTestInvoker.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestInvoker.cs:line 112&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 180&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0()&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 107&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code)&#xD;
+   at Xunit.Sdk.TestInvoker`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 163&#xD;
+   at Xunit.Sdk.XunitTestRunner.InvokeTestMethodAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 88&#xD;
+   at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 70&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator)&#xD;
+   at Xunit.Sdk.TestRunner`1.&lt;&gt;c__DisplayClass43_0.&lt;RunAsync&gt;b__0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 149&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 107&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code)&#xD;
+   at Xunit.Sdk.TestRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 149&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestRunner`1.RunAsync()&#xD;
+   at Xunit.Sdk.XunitTestCaseRunner.RunTestAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestCaseRunner.cs:line 140&#xD;
+   at Xunit.Sdk.TestCaseRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestCaseRunner.cs:line 82&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestCaseRunner`1.RunAsync()&#xD;
+   at Xunit.Sdk.XunitTestCase.RunAsync(IMessageSink diagnosticMessageSink, IMessageBus messageBus, Object[] constructorArguments, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource) in /_/src/xunit.execution/Sdk/Frameworks/XunitTestCase.cs:line 170&#xD;
+   at Xunit.Sdk.XunitTestMethodRunner.RunTestCaseAsync(IXunitTestCase testCase) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestMethodRunner.cs:line 45&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 136&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync()&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 106&#xD;
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunAsync()&#xD;
+   at Xunit.Sdk.XunitTestClassRunner.RunTestMethodAsync(ITestMethod testMethod, IReflectionMethodInfo method, IEnumerable`1 testCases, Object[] constructorArguments) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestClassRunner.cs:line 206&#xD;
+   at Xunit.Sdk.TestClassRunner`1.RunTestMethodsAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestClassRunner.cs:line 227&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 124&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 142&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.TestCaseRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestCaseRunner.cs:line 99&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.TestRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 185&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 114&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 80&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+   at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 114&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+   at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 195&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+   at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 283&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+   at Xunit.Sdk.AsyncTestSyncContext.&lt;&gt;c__DisplayClass7_0.&lt;Post&gt;b__0() in /_/src/xunit.execution/Sdk/AsyncTestSyncContext.cs:line 58&#xD;
+   at Xunit.Sdk.XunitWorkerThread.&lt;&gt;c.&lt;QueueUserWorkItem&gt;b__5_0(Object _) in /_/src/common/XunitWorkerThread.cs:line 37&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task&amp; currentTaskSlot, Thread threadPoolThread)&#xD;
+   at System.Threading.Thread.StartCallback()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at Polly.Outcome`1.GetResultOrRethrow()&#xD;
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+   at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 530&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0&gt;d.MoveNext() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 193&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs).</Message>
+          <StackTrace>   at FluentAssertions.Specialized.DelegateAssertionsBase`2.NotThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 196&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c1ce1ff-f3fd-45fc-8693-e25a85c0429c" testId="bc6df126-d7b9-3dd6-566d-f95749403dbc" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.IsAvailable_ShouldBeFalse_WhenThereAreWaiters" computerName="ASUS-B1400CBNGW" duration="00:00:00.0023874" startTime="2026-04-22T18:10:02.9200025+08:00" endTime="2026-04-22T18:10:02.9200460+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c1ce1ff-f3fd-45fc-8693-e25a85c0429c" />
+    <UnitTestResult executionId="3fe44dbd-fad3-4ed6-aeee-972e63a6c009" testId="886d779e-7100-b432-3806-ede2f4bf08dc" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.IncrementWaiter_ShouldIncreaseCount" computerName="ASUS-B1400CBNGW" duration="00:00:00.0002991" startTime="2026-04-22T18:10:02.9193188+08:00" endTime="2026-04-22T18:10:02.9193909+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fe44dbd-fad3-4ed6-aeee-972e63a6c009" />
+    <UnitTestResult executionId="aadce0c2-0ba6-4b34-b914-2914e1e0dcb9" testId="fc118080-8fc0-04ac-567f-4bc2c6d4bf63" testName="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ShutdownAsync_ShouldWaitForTasksToComplete" computerName="ASUS-B1400CBNGW" duration="00:00:00.1760413" startTime="2026-04-22T18:10:03.1012128+08:00" endTime="2026-04-22T18:10:03.2730888+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aadce0c2-0ba6-4b34-b914-2914e1e0dcb9">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected result to be True, but found False.</Message>
+          <StackTrace>   at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)&#xD;
+   at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ShutdownAsync_ShouldWaitForTasksToComplete() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 231&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.IsAvailable_ShouldBeFalse_WhenThereAreWaiters" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="bc6df126-d7b9-3dd6-566d-f95749403dbc">
+      <Execution id="8c1ce1ff-f3fd-45fc-8693-e25a85c0429c" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests" name="IsAvailable_ShouldBeFalse_WhenThereAreWaiters" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ShutdownAsync_ShouldWaitForTasksToComplete" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="fc118080-8fc0-04ac-567f-4bc2c6d4bf63">
+      <Execution id="aadce0c2-0ba6-4b34-b914-2914e1e0dcb9" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests" name="ShutdownAsync_ShouldWaitForTasksToComplete" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="4778fcf1-ff93-46ce-b86c-9fcb9f2250e7">
+      <Execution id="e8948ba3-16f0-4c2c-800b-0f9b1f779eb6" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests" name="ExecuteWithLockAsync_ShouldThrowWhenCancelled" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.GetHealthMetrics_ShouldReturnCorrectCurrentState" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="ae80f147-e074-1188-5657-a3c9ae3601e8">
+      <Execution id="a5bc6ca3-50cc-4cd7-be94-dc62c440fee5" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests" name="GetHealthMetrics_ShouldReturnCorrectCurrentState" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.IncrementWaiter_ShouldIncreaseCount" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="886d779e-7100-b432-3806-ede2f4bf08dc">
+      <Execution id="3fe44dbd-fad3-4ed6-aeee-972e63a6c009" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests" name="IncrementWaiter_ShouldIncreaseCount" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="d465f9cd-dedd-d4b7-8c68-26e4b4c7550a">
+      <Execution id="ef29dd88-8eda-4f5e-b841-85080804945c" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests" name="ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests.GetCurrentActiveCount_ShouldReflectSemaphoreState" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="f8fbf6cb-06a1-f8a6-0b96-234cc803b015">
+      <Execution id="233c1202-3400-4478-a9c7-7a6924eaf083" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.SemaphoreSlimManagerTests" name="GetCurrentActiveCount_ShouldReflectSemaphoreState" />
+    </UnitTest>
+    <UnitTest name="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock" storage="d:\workspace\utility packages\iooperation\iooperationutilityservices\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests\bin\debug\net10.0\threadlockutilityservices.pollysemaphoreslimservice.xunit.tests.dll" id="706389fa-b088-4028-534e-b3a85315199c">
+      <Execution id="46e11b1f-483b-47d7-ab22-b2b167d487d9" />
+      <TestMethod codeBase="D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\bin\Debug\net10.0\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests" name="ExecuteWithLockAsync_ShouldAcquireAndReleaseLock" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="706389fa-b088-4028-534e-b3a85315199c" executionId="46e11b1f-483b-47d7-ab22-b2b167d487d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d465f9cd-dedd-d4b7-8c68-26e4b4c7550a" executionId="ef29dd88-8eda-4f5e-b841-85080804945c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8fbf6cb-06a1-f8a6-0b96-234cc803b015" executionId="233c1202-3400-4478-a9c7-7a6924eaf083" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae80f147-e074-1188-5657-a3c9ae3601e8" executionId="a5bc6ca3-50cc-4cd7-be94-dc62c440fee5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4778fcf1-ff93-46ce-b86c-9fcb9f2250e7" executionId="e8948ba3-16f0-4c2c-800b-0f9b1f779eb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc6df126-d7b9-3dd6-566d-f95749403dbc" executionId="8c1ce1ff-f3fd-45fc-8693-e25a85c0429c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="886d779e-7100-b432-3806-ede2f4bf08dc" executionId="3fe44dbd-fad3-4ed6-aeee-972e63a6c009" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc118080-8fc0-04ac-567f-4bc2c6d4bf63" executionId="aadce0c2-0ba6-4b34-b914-2914e1e0dcb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="3" failed="5" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.3)&#xD;
+[xUnit.net 00:00:00.18]   Discovering: ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests&#xD;
+[xUnit.net 00:00:00.23]   Discovered:  ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests&#xD;
+[xUnit.net 00:00:00.25]   Starting:    ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests&#xD;
+     Warning:&#xD;
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and&#xD;
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for&#xD;
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.&#xD;
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.&#xD;
+     A paid commercial license supports the development and continued increasing support of&#xD;
+     Fluent Assertions users under both commercial and community licenses. Help us&#xD;
+     keep Fluent Assertions at the forefront of unit testing.&#xD;
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/&#xD;
+[xUnit.net 00:00:00.51]       System.Threading.SemaphoreFullException : Adding the specified count to the semaphore would cause it to exceed its maximum count.&#xD;
+[xUnit.net 00:00:00.51]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.51]            at System.Threading.SemaphoreSlim.Release(Int32 releaseCount)&#xD;
+[xUnit.net 00:00:00.51]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\SemaphoreSlimManager.cs(31,0): at ThreadLevelLockingUtilityServices.SemaphoreSlimManager.TryToRelease()&#xD;
+[xUnit.net 00:00:00.51]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs(899,0): at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.Releaser.TryToRelease()&#xD;
+[xUnit.net 00:00:00.51]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs(919,0): at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.Releaser.Dispose()&#xD;
+[xUnit.net 00:00:00.51]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs(148,0): at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock()&#xD;
+[xUnit.net 00:00:00.51]            at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock()&#xD;
+[xUnit.net 00:00:00.51]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.68]       Expected result to be True, but found False.&#xD;
+[xUnit.net 00:00:00.68]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.68]            at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:00.68]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs(231,0): at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ShutdownAsync_ShouldWaitForTasksToComplete()&#xD;
+[xUnit.net 00:00:00.68]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.69]       System.NullReferenceException : Object reference not set to an instance of an object.&#xD;
+[xUnit.net 00:00:00.69]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.69]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs(747,0): at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.GetHealthMetrics()&#xD;
+[xUnit.net 00:00:00.69]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs(206,0): at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.GetHealthMetrics_ShouldReturnCorrectCurrentState()&#xD;
+[xUnit.net 00:00:00.69]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+[xUnit.net 00:00:00.69]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:10.73]       Expected statusJsonModel2 not to be &lt;null&gt;.&#xD;
+[xUnit.net 00:00:10.73]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.73]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:10.73]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs(179,0): at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable()&#xD;
+[xUnit.net 00:00:10.73]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:10.76]       Did not expect System.OperationCanceledException, but found System.OperationCanceledException: The operation was canceled.&#xD;
+[xUnit.net 00:00:10.76]          at Polly.Utils.ExceptionUtilities.TrySetStackTrace[T](T exception)&#xD;
+[xUnit.net 00:00:10.76]          at Polly.Utils.Pipeline.CompositeComponent.ExecuteCoreWithoutTelemetry[TResult,TState](Func`3 callback, ResilienceContext context, TState state)&#xD;
+[xUnit.net 00:00:10.76]          at Polly.Utils.Pipeline.CompositeComponent.ExecuteCore[TResult,TState](Func`3 callback, ResilienceContext context, TState state)&#xD;
+[xUnit.net 00:00:10.76]          at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+[xUnit.net 00:00:10.76]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.76]          at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+[xUnit.net 00:00:10.76]          at Polly.ResiliencePipeline`1.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 530&#xD;
+[xUnit.net 00:00:10.76]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency)&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 508&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0&gt;d.MoveNext() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 193&#xD;
+[xUnit.net 00:00:10.76]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0()&#xD;
+[xUnit.net 00:00:10.76]          at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:10.76]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.76]          at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:10.76]          at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 196&#xD;
+[xUnit.net 00:00:10.76]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled()&#xD;
+[xUnit.net 00:00:10.77]          at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)&#xD;
+[xUnit.net 00:00:10.77]          at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:10.77]          at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+[xUnit.net 00:00:10.77]          at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.CallTestMethod(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 149&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;&lt;InvokeTestMethodAsync&gt;b__1&gt;d.MoveNext() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 256&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;InvokeTestMethodAsync&gt;b__1()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExecutionTimer.AggregateAsync(Func`1 asyncAction) in /_/src/xunit.execution/Sdk/Frameworks/ExecutionTimer.cs:line 48&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExecutionTimer.AggregateAsync(Func`1 asyncAction)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.&lt;&gt;c__DisplayClass47_0.&lt;InvokeTestMethodAsync&gt;b__0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 215&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync(Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 90&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync(Func`1 code)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 214&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestInvoker.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestInvoker.cs:line 112&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 180&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 107&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestInvoker`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 163&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestRunner.InvokeTestMethodAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 88&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 70&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestRunner`1.&lt;&gt;c__DisplayClass43_0.&lt;RunAsync&gt;b__0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 149&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 107&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 149&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestRunner`1.RunAsync()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestCaseRunner.RunTestAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestCaseRunner.cs:line 140&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestCaseRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestCaseRunner.cs:line 82&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestCaseRunner`1.RunAsync()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestCase.RunAsync(IMessageSink diagnosticMessageSink, IMessageBus messageBus, Object[] constructorArguments, ExceptionAggregator aggregator, CancellationTokenSource cancellationTokenSource) in /_/src/xunit.execution/Sdk/Frameworks/XunitTestCase.cs:line 170&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestMethodRunner.RunTestCaseAsync(IXunitTestCase testCase) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestMethodRunner.cs:line 45&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 136&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 106&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine&amp; stateMachine)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunAsync()&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.XunitTestClassRunner.RunTestMethodAsync(ITestMethod testMethod, IReflectionMethodInfo method, IEnumerable`1 testCases, Object[] constructorArguments) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestClassRunner.cs:line 206&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestClassRunner`1.RunTestMethodsAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestClassRunner.cs:line 227&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 124&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestMethodRunner`1.RunTestCasesAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestMethodRunner.cs:line 142&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestCaseRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestCaseRunner.cs:line 99&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.77]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.77]          at Xunit.Sdk.TestRunner`1.RunAsync() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestRunner.cs:line 185&#xD;
+[xUnit.net 00:00:10.77]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 114&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.XunitTestRunner.InvokeTestAsync(ExceptionAggregator aggregator) in /_/src/xunit.execution/Sdk/Frameworks/Runners/XunitTestRunner.cs:line 80&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.ExceptionAggregator.RunAsync[T](Func`1 code) in /_/src/xunit.core/Sdk/ExceptionAggregator.cs:line 114&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.TestInvoker`1.&lt;RunAsync&gt;b__46_0() in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 195&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task`1.TrySetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.TestInvoker`1.InvokeTestMethodAsync(Object testClassInstance) in /_/src/xunit.execution/Sdk/Frameworks/Runners/TestInvoker.cs:line 283&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.AsyncTestSyncContext.&lt;&gt;c__DisplayClass7_0.&lt;Post&gt;b__0() in /_/src/xunit.execution/Sdk/AsyncTestSyncContext.cs:line 58&#xD;
+[xUnit.net 00:00:10.78]          at Xunit.Sdk.XunitWorkerThread.&lt;&gt;c.&lt;QueueUserWorkItem&gt;b__5_0(Object _) in /_/src/common/XunitWorkerThread.cs:line 37&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task&amp; currentTaskSlot, Thread threadPoolThread)&#xD;
+[xUnit.net 00:00:10.78]          at System.Threading.Thread.StartCallback()&#xD;
+[xUnit.net 00:00:10.78]       --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:10.78]          at Polly.Outcome`1.GetResultOrRethrow()&#xD;
+[xUnit.net 00:00:10.78]          at Polly.ResiliencePipeline.ExecuteAsync[TResult](Func`2 callback, ResilienceContext context)&#xD;
+[xUnit.net 00:00:10.78]          at ThreadLevelLockingUtilityServices.PollySemaphoreSlimService`3.ExecuteWithLockUsingPollyPollValueAsync(TModel operation, CancellationToken ct, Boolean isEmergency) in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLevelLockingUtilityServices\PollySemaphoreSlimService.cs:line 530&#xD;
+[xUnit.net 00:00:10.78]          at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.&lt;&gt;c__DisplayClass11_0.&lt;&lt;ExecuteWithLockAsync_ShouldThrowWhenCancelled&gt;b__0&gt;d.MoveNext() in D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs:line 193&#xD;
+[xUnit.net 00:00:10.78]       --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:10.78]          at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs).&#xD;
+[xUnit.net 00:00:10.78]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.78]            at FluentAssertions.Specialized.DelegateAssertionsBase`2.NotThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:10.78]            at FluentAssertions.Specialized.AsyncFunctionAssertions`2.NotThrowAsync[TException](String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:10.78]         D:\workspace\utility packages\IOOperation\IOOperationUtilityServices\ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests\PollySemaphoreSlimServiceTests.cs(196,0): at ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled()&#xD;
+[xUnit.net 00:00:10.78]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:10.78]   Finished:    ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="ASUS-B1400CBNGW" outcome="Error" timestamp="2026-04-22T18:10:03.0955171+08:00">
+        <Text>[xUnit.net 00:00:00.50]     ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldAcquireAndReleaseLock [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ASUS-B1400CBNGW" outcome="Error" timestamp="2026-04-22T18:10:03.2735839+08:00">
+        <Text>[xUnit.net 00:00:00.68]     ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ShutdownAsync_ShouldWaitForTasksToComplete [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ASUS-B1400CBNGW" outcome="Error" timestamp="2026-04-22T18:10:03.2782084+08:00">
+        <Text>[xUnit.net 00:00:00.69]     ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.GetHealthMetrics_ShouldReturnCorrectCurrentState [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ASUS-B1400CBNGW" outcome="Error" timestamp="2026-04-22T18:10:13.3240537+08:00">
+        <Text>[xUnit.net 00:00:10.73]     ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_WhenFull_ShouldWaitUntilAvailable [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ASUS-B1400CBNGW" outcome="Error" timestamp="2026-04-22T18:10:13.3543837+08:00">
+        <Text>[xUnit.net 00:00:10.76]     ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.PollySemaphoreSlimServiceTests.ExecuteWithLockAsync_ShouldThrowWhenCancelled [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
