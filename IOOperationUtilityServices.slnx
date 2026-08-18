@@ -1,0 +1,15 @@
+<Solution>
+	<Project Path="EntriesAndTheirContentsServices.Tests/EntriesAndTheirContentsServices.Tests.csproj" />
+	<Project Path="EntriesAndTheirContentsServices/EntriesAndTheirContentsServices.csproj" />
+	<Project Path="GetChildItemsServices/GetChildItemsServices.csproj" />
+	<Project Path="IOOperation.BaseUtilityServices/IOOperation.BaseUtilityServices.csproj" Id="902b7b9e-8191-44a7-adb0-8c6adf59dbd0" />
+	<Project Path="IOOperationUtilityServices.NUnit.Tests/IOOperationUtilityServices.NUnit.Tests.csproj" Id="c82710a5-691b-4594-9d73-43f5f263aad9" />
+	<Project Path="IOOperationUtilityServices.Tests/IOOperationUtilityServices.Tests.csproj" />
+	<Project Path="IOOperationUtilityServices/IOOperationUtilityServices.csproj" />
+	<Project Path="TaskUtilityServices.Tests/TaskUtilityServices.Tests.csproj" />
+	<Project Path="TaskUtilityServices/TaskUtilityServices.csproj" />
+	<Project Path="ThreadLevelLockingUtilityServices.NUnit.Tests/ThreadLevelLockingUtilityServices.NUnit.Tests.csproj" />
+	<Project Path="ThreadLevelLockingUtilityServices.Tests/ThreadLevelLockingUtilityServices.Tests.csproj" />
+	<Project Path="ThreadLevelLockingUtilityServices/ThreadLevelLockingUtilityServices.csproj" />
+	<Project Path="ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests/ThreadLockUtilityServices.PollySemaphoreSlimService.xUnit.Tests.csproj" Id="9f95c264-7c08-4b88-8308-11846ed7843b" />
+</Solution>

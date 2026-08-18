@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "IOOperationUtilityServices.sln",
+    "projects": [
+      "ThreadLevelLockingUtilityServices\\ThreadLevelLockingUtilityServices.csproj",
+      "ThreadLevelLockingUtilityServices.Tests\\ThreadLevelLockingUtilityServices.Tests.csproj",
+    ]
+  }
+}
