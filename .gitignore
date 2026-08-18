@@ -1,0 +1,48 @@
+bin/
+obj/
+artifacts/
+.artifacts/
+*.binlog
+.vs/
+*.user
+*.suo
+*.nupkg
+*.snk
+/packages/
+*.log
+*.vspscc
+*.vssscc
+vssettings/
+vssetting/
+*.cache
+*.lscache
+*.png
+*.ico
+*.jpg
+*.jpeg
+*.pdb
+*.mdb
+*.opendb
+*.sln.docstates
+*.json
+*.md
+*.txt
+*.xml
+*.vsix
+*.vsixmanifest
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.ps
+*.bak
+*.backup
+*.tmp
+*.tmp.*
+
+### ================================================ ###
+### === THESE MATCHING FILES WILL NOT BE IGNORED === ###
+### ================================================ ###
+
+# documentation
+!README.md
